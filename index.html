@@ -5,61 +5,78 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Taquería Los Carnales</title>
-<style>
-body {
-  background:#0f0f0f;
-  color:#f5f5f5;
-  font-family:system-ui,Arial;
-  margin:2rem;
+<style>:root{
+  --bg:#0f0f0f; --card:#181818; --text:#f5f5f5; --muted:#b7b7b7;
+  --accent:#22c55e; --radius:14px;
 }
-.section {
-  margin-bottom:2rem;
-  padding:1.5rem;
-  background:#181818;
-  border-radius:14px;
-}
-.cta {
-  display:inline-block;
-  padding:.8rem 1.2rem;
-  background:#22c55e;
-  color:#000;
-  border-radius:10px;
-  text-decoration:none;
-  font-weight:600;
-}
-.footer {
-  opacity:.6;
-  font-size:.8rem;
-  margin-top:3rem;
-}
+*{box-sizing:border-box}
+body{background:var(--bg); color:var(--text); font-family:system-ui,Arial; margin:0; padding:24px}
+.container{max-width:900px; margin:0 auto}
+.section{margin:18px 0; padding:18px; background:var(--card); border-radius:var(--radius)}
+.h1{font-size:28px; margin:0 0 6px 0}
+.h2{font-size:18px; margin:0 0 10px 0}
+.p{margin:0; color:var(--muted)}
+.badge{display:inline-block; padding:6px 10px; border-radius:999px; background:#101010; border:1px solid #2a2a2a; color:var(--muted); font-size:12px}
+.grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px}
+@media (max-width:640px){ .grid{grid-template-columns:1fr} }
+.cta{display:inline-block; padding:12px 14px; background:var(--accent); color:#000; border-radius:12px; text-decoration:none; font-weight:700}
+hr{border:none; border-top:1px solid #2a2a2a; margin:16px 0}
+.footer{opacity:.65; font-size:12px; margin:22px 2px 0 2px}
+.watermark{position:fixed; inset:auto 16px 16px auto; background:#111; border:1px solid #2a2a2a; color:#bbb;
+  padding:10px 12px; border-radius:12px; font-size:12px}
 </style>
 </head>
 <body>
-
+<div class="container">
 <div class="section">
-<h1>Taquería Los Carnales</h1>
-<p>Food · La Barca, Jalisco</p>
+  <div class="badge">Alimentación · La Barca, Jalisco</div>
+  <h1 class="h1">Taquería Los Carnales</h1>
+  <p class="p">Raymundo Vázquez Herrera 829, Sin Nombre, 47910 La Barca, Jalisco, México</p>
 </div>
 
 <div class="section">
-<h2>Especialidades</h2>
-<ul>
-<li>Tacos al pastor</li><li>Tacos de asada</li><li>Gringas</li><li>Quesadillas</li><li>Tortas</li><li>Refrescos</li><li>Aguas frescas</li>
-</ul>
+  <h2 class="h2">Promoción</h2>
+  <p class="p">Haz tu pedido por WhatsApp. Atención rápida y servicio local.</p>
 </div>
 
 <div class="section">
-<h2>Horario</h2>
-<p>Lunes a Domingo: 15:00 – 23:00</p>
+  <h2 class="h2">Lo más pedido</h2>
+  <div class="grid">
+    <div class="section" style="margin:0; background:#141414"><div class="h2" style="margin:0">Tacos al pastor</div></div>
+<div class="section" style="margin:0; background:#141414"><div class="h2" style="margin:0">Tacos de asada</div></div>
+<div class="section" style="margin:0; background:#141414"><div class="h2" style="margin:0">Gringas</div></div>
+<div class="section" style="margin:0; background:#141414"><div class="h2" style="margin:0">Quesadillas</div></div>
+<div class="section" style="margin:0; background:#141414"><div class="h2" style="margin:0">Tortas</div></div>
+<div class="section" style="margin:0; background:#141414"><div class="h2" style="margin:0">Refrescos</div></div>
+<div class="section" style="margin:0; background:#141414"><div class="h2" style="margin:0">Aguas frescas</div></div>
+  </div>
 </div>
 
 <div class="section">
-<a class="cta" href="https://wa.me/523931061077">Pedir por WhatsApp</a>
+  <h2 class="h2">Horario</h2>
+  <p class="p">Lunes a Domingo: 15:00 – 23:00</p>
+</div>
+
+<div class="section">
+  <h2 class="h2">Ubicación</h2>
+  <p class="p">Raymundo Vázquez Herrera 829, Sin Nombre, 47910 La Barca, Jalisco, México</p>
+  <p class="p">Plus code: 7FV5+2V La Barca, Jalisco</p>
+</div>
+
+<div class="section">
+  <a class="cta" href="https://wa.me/523931061077">Pedir por WhatsApp</a>
+</div>
+
+<div class="section">
+  <h2 class="h2">Aviso</h2>
+  <p class="p">Este sitio es una DEMO. La información puede estar sujeta a confirmación con el negocio.</p>
 </div>
 
 <div class="footer">
-Demo · Cliente c001 · Generado 2026-01-07
+  Demo · Cliente c001 · Generado 2026-01-07
 </div>
+<div class="watermark">DEMO · c001 · expira en 7 días</div>
 
+</div>
 </body>
 </html>
